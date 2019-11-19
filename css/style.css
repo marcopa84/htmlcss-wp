@@ -108,7 +108,15 @@ main:after{
   display: table;
   clear: both;
 }
-
+main h3{
+  font-size: 30px;
+  margin: 20px 0px;
+}
+main p{
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
 /* COLONNA SINISTRA */
 .left_col{
   width: 25%;
@@ -130,7 +138,24 @@ main:after{
   display: table;
   clear: both;
 }
-
+.left_col ul{
+  list-style: none;
+  margin-top: 20px;
+}
+.left_col li{
+  margin: 15px 0;
+}
+.left_col a{
+  color: green;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.left_col a:hover{
+  color: grey;
+}
 
 /* PARTE CENTRALE */
 .center_col{
@@ -138,7 +163,13 @@ main:after{
   margin-left: 5%;
   margin-right: 5%;
   background-color: #fff;
+  padding: 10px;
 }
+.center_col h3{
+  text-shadow: 2px 2px 3px #000;
+  text-transform: uppercase;
+}
+
 /* COLONNA DESTRA */
 .right_col{
   width: 25%;
@@ -149,6 +180,10 @@ main:after{
   padding: 5px;
   border-radius: 5px;
 }
+.module h3{
+  text-transform: capitalize;
+}
+
 
 /* REGOLE DEL FOOTER */
 footer{
@@ -175,4 +210,20 @@ footer div{
 footer div i{
   margin-left: 100px;
   margin-right: 100px;
+}
+footer div i:hover{
+  cursor: pointer;
+}
+footer div i.fb:hover{
+  color: blue;
+}
+footer div i.insta:hover{
+  color: purple;
+}
+footer div i.git:hover{
+  color: black;
+}
+.cssvalidator{
+  margin-top: 20px;
+  text-align: center;
 }
