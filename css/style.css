@@ -6,61 +6,49 @@
 }
 
 body{
-  background-image: url(../img/default-pattern.png);
-}
-
-.conteiners{
   width: 80%;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  background-image: url(../img/default-pattern.png);
+  font-family: 'Raleway', sans-serif;
+
 }
 
+/* REGOLE MENU E INTESTAZIONE */
 header{
-  width: 100%;
-  font-family: 'Raleway', sans-serif;
   color: #fff;
   text-transform: uppercase;
 }
 .header_title_img{
   position: relative;
-  height: 300px;
+  height: 400px;
   background-image: url(../img/default-header.jpg);
-  background-position: center;
   background-size: cover;
   border: 10px solid #fff;
 }
-.header_title{
+.header_title_img img{
+  height: 250px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px solid #fff;
-  padding: 0 10px;
-  font-size: 40px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+
 }
-.header_title h1{
-  font-weight: 400;
-}
-.header_title i{
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
+
 header h3{
   position: absolute;
   bottom: 30px;
   left:50%;
   transform: translate(-50%, 0);
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 25px;
 
 }
+/* menu */
 nav{
   height: 48px;
   background-color: rgba(102, 102, 102, 0.6);
-  text-align: center;
 }
 nav a{
   text-decoration: none;
@@ -71,6 +59,7 @@ nav ul{
   margin: auto;
   width: 80%;
   list-style: none;
+
 }
 nav ul li{
   position: relative;
@@ -101,12 +90,15 @@ nav ul li:hover{
 #menu ul ul > li {
   width: 100%;
 }
+
+/* REGOLE DELLA PARTE CONTENUTO */
 main{
   width: 100%;
 }
 
 .float_left{
   float: left;
+  margin: 15px 0;
   padding: 5px;
   border-radius: 5px;
 }
@@ -117,34 +109,51 @@ main:after{
   clear: both;
 }
 
-
+/* COLONNA SINISTRA */
 .left_col{
-  margin-top: 10px;
   width: 25%;
-  background: #fff;
+  background-color: #fff;
 }
+.title_col_left i{
+  float: left;
+  color: orange;
+  font-size: 30px;
+}
+.title_col_left div{
+  float: left;
+  font-size: 25px;
+  text-transform: capitalize;
+  padding-left: 10px;
+}
+.title_col_left:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* PARTE CENTRALE */
 .center_col{
-  margin-top: 10px;
   width: 40%;
-  margin: 10px 5%;
-  background: #fff;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #fff;
 }
+/* COLONNA DESTRA */
 .right_col{
   width: 25%;
 }
 .module{
-  margin-top: 10px;
   margin-bottom: 10px;
-  border: 5px solid red;
   background: #fff;
   padding: 5px;
   border-radius: 5px;
 }
 
+/* REGOLE DEL FOOTER */
 footer{
   position: relative;
   height:200px;
-  width: 100%;
   background-color: #fff;
   border-radius: 5px;
   text-align: center;
